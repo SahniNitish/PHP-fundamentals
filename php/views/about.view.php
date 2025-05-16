@@ -1,6 +1,6 @@
 <?php require('views/particals/head.php') ?>
 <?php require('views/particals/nav.php') ?>
-<?php require('views/particals/banner.php')?>
+<?php require('views/particals/banner.php') ?>
 
 
 <main>
@@ -8,9 +8,4 @@
     <P>Hello. Now you are on the About page.</P>
   </div>
 </main>
-</div>
-
-
-</body>
-
-</html>
+<?php require('views/particals/footer.php') ?>
