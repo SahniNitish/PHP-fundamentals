@@ -1,7 +1,7 @@
 <?php 
-   
-   $heading = 'Home Page is This One.';
 
-   var_dump('$_SERVER');
+$heading = 'Home Page is This One.';
 
 require "views/index.view.php";
+
+?>
