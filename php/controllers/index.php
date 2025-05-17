@@ -2,6 +2,6 @@
 
 $heading = 'Home Page is This One.';
 
-require "views/index.view.php";
+require __DIR__ . "/../views/index.view.php";
 
 ?>
