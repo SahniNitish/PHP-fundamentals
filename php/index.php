@@ -1,4 +1,6 @@
 <?php
+require 'functions.php';
+
 // Add error reporting
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -59,3 +61,24 @@ try {
     header('HTTP/1.1 500 Internal Server Error');
     echo 'An error occurred. Please try again later.';
 }
+// connect to database
+class Person{
+    public $name;
+    public $age;
+
+    public function breathe(){
+        echo "I am Beathing";
+          
+    }
+}
+
+<?php
+require 'functions.php';
+$dsn = 'mysql:host=localhost;port=3306;dbname=myapp;charset=utf8mb4';
+$pdo = new PDO($dsn);
+$statement = $pdo->prepare('select * from posts');
+$statement->execute();
+
+$posts = $statement->fetchALL();
+
+dd($posts);

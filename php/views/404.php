@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>404 - Page Not Found</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 { color: #333; }
-        .error-message { color: #666; }
-    </style>
-</head>
-<body>
-    <h1>404 - Page Not Found</h1>
-    <p class="error-message">Sorry, the page you are looking for does not exist.</p>
-    <a href="/">Return to Home</a>
+<?php
+$heading = "404 Not Found";
+require('views/particals/head.php');
+require('views/particals/nav.php');
+require('views/particals/banner.php');
+?>
+
+<main>
+  <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <p>Sorry, the page you are looking for could not be found.</p>
+    <p>Please check the URL or go back to the <a href="/" class="text-blue-600 hover:text-blue-800">home page</a>.</p>
+  </div>
+</main>
+</div>
+
 </body>
 </html>
